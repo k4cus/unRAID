@@ -4,8 +4,8 @@
 	<!ENTITY name				"ProFTPd">
 	<!ENTITY displayName		"ProFTPd">
 	<!ENTITY author				"SlrG">
-	<!ENTITY authorName			"Michael Wehr">
-	<!ENTITY plgVersion			"2021.03.31">
+	<!ENTITY authorName			"Michael Wehr, fix by Kacper Nowak">
+	<!ENTITY plgVersion			"2026.04.07">
 	<!ENTITY pld				"/boot/config/plugins">
 	<!ENTITY plg				"&pld;/&name;">
 	<!ENTITY pls				"/usr/local/emhttp/plugins/&name;/scripts">
@@ -19,8 +19,8 @@
 	<!ENTITY dependencyMD5		"faee89df5151607dbbb7a26005cd13b1">
 	<!ENTITY dependencyURL		"&ghm;/AppSupport/&name;/&dependencyFILE;">
 	<!ENTITY dependencyFILE64	"&name;-&author;-Dependency-1.8_x64.tar.gz">
-	<!ENTITY dependencyMD564	"661e784ff3374312e72a747d9dc2de49">
-	<!ENTITY dependencyURL64	"&ghm;/AppSupport/&name;/&dependencyFILE64;">
+	<!ENTITY dependencyMD564	"ed4c1b61854852037702220495c1248a">
+	<!ENTITY dependencyURL64	"https://github.com/k4cus;/unRAID/raw/master;/AppSupport/&name;/&dependencyFILE64;">
 	<!ENTITY commonDIR			"/usr/local/&author;-Common">
 ]>
 
