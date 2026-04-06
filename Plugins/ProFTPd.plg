@@ -427,6 +427,7 @@ fi
 
 # Verifies plugin dependency files if they exist, deletes if they are incorrect so new ones can be downloaded
 if [ -f "$DEPFILES" ]; then
+	echo -e "\t $DEPMD5  $DEPFILES"
 	MD5TEST=`echo "$DEPMD5  $DEPFILES" | md5sum --quiet --status -c - &amp;&amp; echo "1" || echo "0"`
 	if [ "$MD5TEST" == "0" ]; then
 		echo -e "\t Found wrong version of plugin dependency files. Deleting"
