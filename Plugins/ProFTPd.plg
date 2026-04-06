@@ -20,7 +20,7 @@
 	<!ENTITY dependencyURL		"&ghm;/AppSupport/&name;/&dependencyFILE;">
 	<!ENTITY dependencyFILE64	"&name;-&author;-Dependency-1.8_x64.tar.gz">
 	<!ENTITY dependencyMD564	"ed4c1b61854852037702220495c1248a">
-	<!ENTITY dependencyURL64	"https://github.com/k4cus;/unRAID/raw/master;/AppSupport/&name;/&dependencyFILE64;">
+	<!ENTITY dependencyURL64	"https://github.com/k4cus/unRAID/raw/master/AppSupport/&name;/&dependencyFILE64;">
 	<!ENTITY commonDIR			"/usr/local/&author;-Common">
 ]>
 
@@ -489,7 +489,6 @@ if [ ! -f "$DEPFILES" ] &amp;&amp; [ "$DEPMD5" != "" ]; then
 	echo -e "\t Latest plugin dependency files downloading"
 	if [ "$HASNET" == "yes" ]; then
 		mkdir -p /boot/config/plugins/&name;
-		echo -e "$DEPFILES" "$DEPURL"
 		wget --no-check-certificate -qO "$DEPFILES" "$DEPURL"
 		if [ -f "$DEPFILES" ]; then
 			MD5TEST2=`echo "$DEPMD5  $DEPFILES" | md5sum --quiet --status -c - &amp;&amp; echo "1" || echo "0"`
