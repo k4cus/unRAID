@@ -581,6 +581,7 @@ if [ "$DEPMD5" != "" ]; then
 		# Copy Config Editor to plugin dir
 		[ -f "/tmp/&name;-inst/install-B/ConfEdit.tar.gz" ] &amp;&amp; cp -f --no-preserve mode,ownership "/tmp/&name;-inst/install-B/ConfEdit.tar.gz" "&plg;/" &amp;&amp; rm -f "/tmp/&name;-inst/install-B/ConfEdit.tar.gz"
 
+		echo -e 'ROOT="&commonDIR;" upgradepkg --install-new /tmp/&name;-inst/install-B/*'
 		ROOT="&commonDIR;" upgradepkg --install-new /tmp/&name;-inst/install-B/*
 		if [ ! -f "/usr/share/curl/ca-bundle.crt" ] &amp;&amp; [ -f "&commonDIR;/usr/share/curl/ca-bundle.crt" ]; then
 			mkdir -p "/usr/share/curl"
