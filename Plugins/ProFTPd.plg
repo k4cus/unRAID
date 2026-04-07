@@ -19,7 +19,7 @@
 	<!ENTITY dependencyMD5		"faee89df5151607dbbb7a26005cd13b1">
 	<!ENTITY dependencyURL		"&ghm;/AppSupport/&name;/&dependencyFILE;">
 	<!ENTITY dependencyFILE64	"&name;-&author;-Dependency-1.8_x64.tar.gz">
-	<!ENTITY dependencyMD564	"db097ec9220a3561b7c8caeb69122633">
+	<!ENTITY dependencyMD564	"9151569b8ff36906c48997497a6d1b6e">
 	<!ENTITY dependencyURL64	"https://github.com/k4cus/unRAID/raw/master/AppSupport/&name;/&dependencyFILE64;">
 	<!ENTITY commonDIR			"/usr/local/&author;-Common">
 ]>
